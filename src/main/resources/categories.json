@@ -1,0 +1,106 @@
+{
+  "id": 1,
+  "name" : "All Ads",
+  "children": [
+    {
+      "id": 10,
+      "name": "For Sale",
+      "parent": 1,
+      "children" : [
+        {
+          "id": 100,
+          "name": "Home & Garden",
+          "parent": 10,
+          "children": [
+            {
+              "id": 1055,
+              "name": "Dining, Living Room Furniture",
+              "parent": 100,
+              "children": [
+                {
+                  "id": 1000,
+                  "name" : "Sofas, Armchairs & Suites",
+                  "parent": 1055
+                },
+                {
+                  "id": 1001,
+                  "name": "Dining Tables & Chairs",
+                  "parent": 1055
+                },
+                {
+                  "id": 1002,
+                  "name": "Carpets & Flooring",
+                  "parent": 1055
+                },
+                {
+                  "id": 1003,
+                  "name": "Other",
+                  "parent": 1055
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 101,
+          "parent": 10,
+          "name": "Sports, Leisure & Travel"
+        },
+        {
+          "id": 102,
+          "parent": 10,
+          "name": "Diy Tools & Materials"
+        },
+        {
+          "id": 103,
+          "parent": 10,
+          "name": "Other Goods"
+        }
+      ]
+    },
+    {
+      "id" : 11,
+      "name": "Motors",
+      "parent": 1,
+      "children": [
+        {
+          "id": 104,
+          "parent": 11,
+          "name": "Cars"
+        },
+        {
+          "id": 105,
+          "name": "Accessories",
+          "parent": 11,
+          "children": [
+            {
+              "id": 1010,
+              "parent": 105,
+              "name": "Wheel Rims & Tyres"
+            },
+            {
+              "id": 1011,
+              "name": "In-car Audio & Gps",
+              "parent": 105
+            },
+            {
+              "id": 1012,
+              "name": "Other",
+              "parent": 105
+            }
+          ]
+        },
+        {
+          "id": 106,
+          "parent": 11,
+          "name": "Vans"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "parent": 1,
+      "name": "Properties"
+    }
+  ]
+}
