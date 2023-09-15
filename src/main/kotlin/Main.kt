@@ -1,6 +1,4 @@
-import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.Serializable
-import kotlinx.serialization.json.Json
 
 /**
  * The following code sample is deserialising a simple tree structured from JSON.
@@ -19,19 +17,10 @@ import kotlinx.serialization.json.Json
  *
  */
 
-@OptIn(ExperimentalSerializationApi::class)
 private fun main() {
-    val categoriesString = getResourceAsText("categories.json")
-    requireNotNull(categoriesString)
-
-    val json = Json {
-        ignoreUnknownKeys = true
-        explicitNulls = false
-    }
-
-    val tree = json.decodeFromString<TreeNode>(categoriesString)
-
     println(tree)
+
+    search(tree, "dining")
 }
 
 /**
@@ -47,7 +36,3 @@ fun search(tree: TreeNode, searchTerm: String): List<TreeNode> {
 
 @Serializable
 data class TreeNode(val id: Long, val name: String, val parent: Long?, val children: List<TreeNode>?)
-
-fun getResourceAsText(path: String): String? =
-    object {}.javaClass.getResource(path)?.readText()
-
